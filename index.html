@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Test</title>
+</head>
+<body>
+    <div class="header">
+        <h2>List Member</h2>
+    </div>
+    <div class="member-form">
+    <form autocomplete="off"; onsubmit="onFormSubmit()" >
+        <div>
+            <label>Họ tên</label>
+            <input type="text" placeholder="Nhập họ tên" name="Hoten" id="Hoten">
+        </div>
+        <div>
+            <label>Năm sinh</label>
+            <input type="number" placeholder="Nhập năm sinh" name="NamSinh" id="NamSinh">
+        </div>
+        <div>
+            <label>Quê quán</label>
+            <input type="text" placeholder="Nhập quê quán" name="Quequan" id="Quequan">
+        </div>
+        <div  class="form-action-buttons">
+            <input type="submit" value="Submit">
+        </div>
+        
+    </form>
+    </div>
+    <div class = "member-table">
+        <table class="list" id="ListItem">
+            <thead>
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Năm sinh</th>
+                    <th>Quê quán</th>
+                    <th>Lựa chọn</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
